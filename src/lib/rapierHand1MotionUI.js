@@ -3,6 +3,8 @@ const THREE = window.AFRAME.THREE;
 import {globalWorkerRef, globalObjectsRef} from '@ucl-nuee/rapier-worker'
 import {isoInvert, isoMultiply} from './isometry3.js';
 
+console.log("Rapier Hand1MotionUI component loaded. globalWorkerRef = ", globalWorkerRef);
+
 AFRAME.registerComponent('rapier-hand1-motion-ui', {
   init: function () {
     this.triggerdownState = false;

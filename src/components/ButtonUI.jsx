@@ -11,7 +11,7 @@ function ButtonUI() {
   // ****************
   // Rapier worker
   const workerRef = globalWorkerRef;
-  console.log("ButtonUI workerRef:", workerRef);
+  console.log("ButtonUI Rapier workerRef:", workerRef);
   // ****************
   // Clickable Object
   const startStopButton = useRef(null);

@@ -2,11 +2,15 @@ import AFRAME from 'aframe'
 // const THREE = window.AFRAME.THREE;
 import {globalWorkerRef} from '@ucl-nuee/rapier-worker'
 
+console.log("Rapier BoxController component loaded. globalWorkerRef = ", globalWorkerRef);
+
 AFRAME.registerComponent('rapier-box-controller', {
   schema: {
     robotId: {type: 'string', default: 'rapier-controller'},
   },
   init: function() {
+  	console.log("Rapier BoxController component initilalized. globalWorkerRef = ", globalWorkerRef);
+
     const sceneEl = this.el.sceneEl;
     const onSceneLoaded = () => {
       const robotRegistry = this.el.sceneEl.robotRegistryComp;
